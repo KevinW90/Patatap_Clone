@@ -1,0 +1,54 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	color: white;
+	z-index: 1;
+}
+
+#kbd {
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.kbdRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.key {
+	color: white;
+	font-size: 1.5em;
+	border: 1px solid white;
+	padding: 5px;
+	min-width: 20px;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 5px;
+
+}
+
+@media screen and (min-width: 768px){
+	#kbd {
+		display: none;
+	}
+}
